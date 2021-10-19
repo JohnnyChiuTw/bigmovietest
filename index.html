@@ -45,7 +45,7 @@
 
 <body style='margin : 0px; overflow: hidden;'>
     <div class="arjs-loader">
-        <div>Loading, please wait...5</div>
+        <div>Loading, please wait...6</div>
     </div>
     <a-scene
         vr-mode-ui="enabled: false;"
@@ -54,8 +54,15 @@
 
         <a-assets>
             <video src="drink2vedio.mp4"
-                preload="auto" id="vid" response-type="arraybuffer" loop
-                crossorigin webkit-playsinline autoplay muted playsinline>
+                preload="auto" 
+		   id="vid" 
+		   response-type="arraybuffer" 
+		   loop
+                crossorigin 
+		   webkit-playsinline 
+		   autoplay 
+		   unmuted 
+		   playsinline>
             </video>
         </a-assets>
 
@@ -66,7 +73,7 @@
         >
             <a-video
                 src="#vid"
-                position='300 175 -10'
+                position='50 150 -100'
                 rotation='90 0 180'
                 width='300'
                 height='175'
